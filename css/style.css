@@ -2837,6 +2837,13 @@ button.swiper-pagination-bullet {
 }
 
 @media (768px >= width) {
+  .w100s {
+    width: 100% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
   .w95s {
     width: 95% !important;
     margin: auto;

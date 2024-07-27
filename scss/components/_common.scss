@@ -34,7 +34,12 @@
     margin: auto;
 }
 
-
+.w100s{
+    @include max(768){
+        width: 100% !important;
+        margin: auto;
+    }
+}
 .w95s{
     @include max(768){
         width: 95% !important;
