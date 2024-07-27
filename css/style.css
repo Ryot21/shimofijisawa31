@@ -1960,10 +1960,6 @@ span.-block {
   z-index: 10;
 }
 
-.swiper-3d .swiper-slide-shadow {
-  background: rgba(0, 0, 0, 0.15);
-}
-
 .swiper-3d .swiper-slide-shadow-left {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
@@ -4167,6 +4163,9 @@ button.swiper-pagination-bullet {
     width: 95%;
   }
 }
+.c-contents.-borderArea {
+  border: 1px solid #d2d2d3;
+}
 .c-contents.-f-slider, .c-contents.-f-view {
   width: 100%;
   height: auto;
@@ -4437,6 +4436,60 @@ button.swiper-pagination-bullet {
     transform: translate(-50%, -50%);
     width: 60%;
     z-index: 1;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperContent01 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent01 {
+    top: 50%;
+    left: 67%;
+    width: 60%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperContent02 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent02 {
+    top: 59%;
+    left: 78%;
+    width: 35%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-bannerBtn {
+    top: 80%;
+    left: 27.7%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
+  top: 25%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
+    top: 80%;
+    left: 13.5%;
+    width: 15%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
+    top: 80%;
+    left: 11.5%;
+    width: 10%;
   }
 }
 .c-contents.-returnBtn a {
@@ -4989,6 +5042,36 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .c-flex.-cr_s {
     flex-direction: column-reverse !important;
+  }
+}
+.c-flex.-profile {
+  flex-wrap: wrap;
+}
+@media (768px >= width) {
+  .c-flex.-profile li:nth-child(1) {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+  }
+  .c-flex.-profile li:nth-child(2) {
+    width: calc(50% - 5px);
+    margin-left: 5px;
+  }
+  .c-flex.-profile li:nth-child(3) {
+    width: 100%;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-profile li:nth-child(1) {
+    width: 34%;
+    margin-right: 1%;
+  }
+  .c-flex.-profile li:nth-child(2) {
+    display: inline-block;
+    width: 63%;
+    margin-left: 2%;
+  }
+  .c-flex.-profile li:nth-child(3) {
+    display: none;
   }
 }
 .c-flex.-col1_2 .flexItem {
@@ -5716,7 +5799,6 @@ a {
 }
 .swiper .swiper-wrapper .swiper-slide {
   text-align: end;
-  opacity: 0.5;
   overflow: hidden;
   transition: 0.5s all;
 }
@@ -5896,6 +5978,55 @@ a {
   .swiper.swiper-Build .swiper-pagination-bullet-active, .swiper.swiper-Video .swiper-pagination-bullet-active {
     background: #3b3b3b;
   }
+}
+.swiper.swiper-cards {
+  /* 前への矢印カスタマイズ */
+  /* 次への矢印カスタマイズ */
+}
+.swiper.swiper-cards .swiper-button-prev,
+.swiper.swiper-cards .swiper-button-next {
+  top: auto;
+  bottom: -25%;
+  height: 50px;
+  width: 50px;
+}
+@media (width >= 768px) {
+  .swiper.swiper-cards .swiper-button-prev,
+  .swiper.swiper-cards .swiper-button-next {
+    bottom: -20%;
+  }
+}
+.swiper.swiper-cards .swiper-button-prev::after,
+.swiper.swiper-cards .swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+  filter: none;
+}
+.swiper.swiper-cards .swiper-button-prev {
+  left: 25%;
+}
+@media (width >= 768px) {
+  .swiper.swiper-cards .swiper-button-prev {
+    left: 35%;
+  }
+}
+.swiper.swiper-cards .swiper-button-prev::after {
+  background-image: url(../images/SVG/left.svg);
+}
+.swiper.swiper-cards .swiper-button-next {
+  right: 25%;
+}
+@media (width >= 768px) {
+  .swiper.swiper-cards .swiper-button-next {
+    right: 35%;
+  }
+}
+.swiper.swiper-cards .swiper-button-next::after {
+  background-image: url(../images/SVG/right.svg);
 }
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {

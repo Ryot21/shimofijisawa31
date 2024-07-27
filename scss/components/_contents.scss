@@ -13,6 +13,10 @@
 		}
 	}
 
+	&.-borderArea {
+		border: 1px solid #d2d2d3;
+	}
+
 	&.-f-slider,//スライダー
 	&.-f-view{  //ファーストビュー
 		width: 100%;
@@ -259,6 +263,53 @@
 					transform: translate(-50%, -50%);
 					width: 60%;
 					z-index: 1;
+				}
+			}
+			// ↓ Swiper関係の位置
+			&.-swiperContent01{
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 75%;
+				@include min(768){
+					top: 50%;
+					left: 67%;
+					width: 60%;
+				}
+			}
+			&.-swiperContent02{
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 70%;
+				@include min(768){
+					top: 59%;
+					left: 78%;
+					width: 35%;
+				}
+			}
+			&.-bannerBtn{
+				@include min(768){
+					top: 80%;
+					left: 27.7%;
+					transform: translate(-50%, -50%);
+					width: 10%;
+				}
+			}
+			&.-bannerBtn02{
+				top: 25%;
+				left: 80%;
+				transform: translate(-50%, -50%);
+				width: 35%;
+				@include min(768){
+					top: 80%;
+					left: 13.5%;
+					width: 15%;
+				}
+				@include min(1400){
+					top: 80%;
+					left: 11.5%;
+					width: 10%;
 				}
 			}
 		}
