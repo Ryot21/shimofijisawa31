@@ -274,6 +274,10 @@
 				@include min(768){
 					top: 50%;
 					left: 67%;
+					width: 50%;
+				}
+				@include min(1400){
+					left: 67%;
 					width: 60%;
 				}
 			}
@@ -286,6 +290,25 @@
 					top: 59%;
 					left: 78%;
 					width: 35%;
+				}
+				@include min(1400){
+					left: 78%;
+					width: 35%;
+				}
+			}
+			&.-swiperContent03{
+				top: 48%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 70%;
+				@include min(768){
+					top: 43%;
+					left: 65%;
+					width: 55%;
+				}
+				@include min(1400){
+					left: 65%;
+					width: 55%;
 				}
 			}
 			&.-bannerBtn{

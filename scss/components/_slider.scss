@@ -201,6 +201,11 @@
             @include min(768){
                 bottom: -20%;
             }
+            &.-ver02{
+                @include max(768){
+                    bottom: -35%;
+                }
+            }
             &::after{
                 background-repeat: no-repeat;
                 background-size: contain;

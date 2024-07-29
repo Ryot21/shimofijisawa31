@@ -2806,12 +2806,12 @@ button.swiper-pagination-bullet {
 }
 
 .w1100 {
-  width: 100%;
+  width: 90% !important;
   margin: auto;
 }
 @media (width >= 1100px) {
   .w1100 {
-    width: 90% !important;
+    width: 80% !important;
     max-width: 1100px;
   }
 }
@@ -2828,6 +2828,11 @@ button.swiper-pagination-bullet {
 
 .w90 {
   width: 90%;
+  margin: auto;
+}
+
+.w85 {
+  width: 85% !important;
   margin: auto;
 }
 
@@ -4455,6 +4460,12 @@ button.swiper-pagination-bullet {
   .c-contents.-imgBg .c-contentsBox.-swiperContent01 {
     top: 50%;
     left: 67%;
+    width: 50%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent01 {
+    left: 67%;
     width: 60%;
   }
 }
@@ -4469,6 +4480,31 @@ button.swiper-pagination-bullet {
     top: 59%;
     left: 78%;
     width: 35%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent02 {
+    left: 78%;
+    width: 35%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperContent03 {
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent03 {
+    top: 43%;
+    left: 65%;
+    width: 55%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent03 {
+    left: 65%;
+    width: 55%;
   }
 }
 @media (width >= 768px) {
@@ -6001,6 +6037,12 @@ a {
   .swiper.swiper-cards .swiper-button-prev,
   .swiper.swiper-cards .swiper-button-next {
     bottom: -20%;
+  }
+}
+@media (768px >= width) {
+  .swiper.swiper-cards .swiper-button-prev.-ver02,
+  .swiper.swiper-cards .swiper-button-next.-ver02 {
+    bottom: -35%;
   }
 }
 .swiper.swiper-cards .swiper-button-prev::after,
